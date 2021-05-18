@@ -11,3 +11,4 @@ def sound_choose(my_string_1):
     engine.setProperty('voice', voices[2].id)
     engine.say(my_string_2)
     engine.runAndWait()
+    return 0
