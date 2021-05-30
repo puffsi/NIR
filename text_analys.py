@@ -13,5 +13,5 @@ def text_analys(my_string):
         if char == " ":
             words.append(my_string[i_1:i_2])
             i_1 = i_2 + 1
-
+    print(words)
     return  words

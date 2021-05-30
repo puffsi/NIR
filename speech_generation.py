@@ -40,8 +40,9 @@ def speech_generation(my_string_1):
     print(outputs)
 
     rate = engine.getProperty('rate')
-    engine.setProperty('rate', 250)
+    engine.setProperty('rate', 260)
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[2].id)
     engine.say(my_string_1)
+    engine.save_to_file(my_string_1, 'test_speech_generation_3.mp3')
     engine.runAndWait()

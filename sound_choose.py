@@ -10,5 +10,6 @@ def sound_choose(my_string_1):
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[2].id)
     engine.say(my_string_2)
+    engine.save_to_file(my_string_2, 'test_sound_choose_3.mp3')
     engine.runAndWait()
     return 0

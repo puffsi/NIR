@@ -11,7 +11,7 @@ import speech_generation
 List = []
 i = 0
 def Reading(): #функция четния из файла
-    with codecs.open('text.txt', encoding='utf-8') as f:  # считывание из файла в список
+    with codecs.open('Text_3.txt', encoding='utf-8') as f:  # считывание из файла в список
         for line in f:
             List.append(line)
 
@@ -24,5 +24,3 @@ print("\nПрочитанный текст: " + my_string)
 my_string_1 = text_analys.text_analys(my_string)
 sound_choose.sound_choose(my_string_1)
 speech_generation.speech_generation(my_string_1)
-#def Speech():
-   # return  0
